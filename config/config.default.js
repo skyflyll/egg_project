@@ -24,14 +24,13 @@ module.exports = appInfo => {
     },
   }
 
-  //数据库链接配置
-  exports.mongoose = {
-    client: {
-      url: 'mongodb://127.0.0.1/egg',
+  //mongoose
+  config.mongoose = {
+      url: 'mongodb://127.0.0.1:27017/egg',
       options: {},
-    },
   };
-
 
   return config;
 };
+
+

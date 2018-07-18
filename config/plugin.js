@@ -9,7 +9,7 @@ exports.nunjucks = {
     package: 'egg-view-nunjucks',
 };
 
-// 添加MongoDB链接
+// 添加 mongoose
 exports.mongoose = {
     enable: true,
     package: 'egg-mongoose',
