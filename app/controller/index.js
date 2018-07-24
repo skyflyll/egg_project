@@ -7,7 +7,7 @@ class IndexController extends Controller {
     const data ={
       index:'egg_project_测试测试'
     };
-    await this.ctx.render('index.html', data);
+    await this.ctx.render('/index.html', data);
   }
 }
 

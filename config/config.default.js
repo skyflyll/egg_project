@@ -24,7 +24,12 @@ module.exports = appInfo => {
     },
   }
 
-  //mongoose
+  //文件流的形式上传文件配置
+  config.multipart = {
+    fileSize: "50mb",
+  }
+
+  //mongoose 配置
   config.mongoose = {
       url: 'mongodb://127.0.0.1:27017/egg',
       options: {},

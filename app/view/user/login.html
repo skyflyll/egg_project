@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <style>
+    ul{
+        list-style: none;
+    }
+    </style>
+</head>
+<body>
+    <form action="/login?_csrf={{ ctx.csrf | safe }}" method="post" enctype="multipart/form-data">
+        <ul>
+            <li>
+                <label for="userName">用户：</label>
+                <input type="text" name="userName" placeholder="输入用户名">
+            </li>
+            <li>
+                <label for="passWord">密码：</label>
+                <input type="password" name="passWord">
+            </li>
+            <input type="submit" value="login">
+        </ul>
+    </form>
+</body>
+</html>
